@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules of Simon says game</title>
+    <style> /* To add styles */
+        *{
+            /* removing default margin and paddings  */
+            margin: 0;
+            padding: 0;
+        }
+        body{ 
+            /* applying background-color  to whole page  */
+            background-color: rgba(128, 128, 128, 0.303);
+        }
+        .regulations{
+            /* setting font styles  */
+            font-size: 1.3em;
+            font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+            padding: 10px 50px;
+        }
+        .regulations h1{
+            margin: 20px 0px;
+        }
+        .regulations h2{
+            margin: 20px 0px;
+        }
+        .regulations ol li{
+            margin: 10px 0px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+        /* setting button style and effects  */
+        .button button{
+            margin: 40px 0;
+            background-color: black;
+            font-weight: bold;
+            color: white;
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 3px rgb(72, 120, 21);
+            overflow: hidden;
+        }
+        .button button:hover{
+            background-color: rgba(0, 0, 0, 0.453);
+            box-shadow: 2px 2px 3px black;
+        }
+        .button button:active{
+            background-color: white;
+            color: black;
+            box-shadow: 0 0 6px 4px rgb(242, 234, 121);
+        }
+    </style>
+</head>
+<body>
+    <div class="regulations">
+        <!-- all the rules of this game  -->
+        <h1>Rules of this game are </h1>
+        <ol type="I">
+            <li>You have to memorize all the colors that have been comed once. And choose the blocks according to that </li>
+            <li>The game will end when you will not able to mark the correct block that have come or had comed. </li>
+            <li>Score is given according to the rule current level  X 10.</li>
+            <li>If you are confused you can take hints.In hints the oreder of boxes in which they have appeared will be shown for 1 second and here the firs box will be represented by 0 and similarly the last one is represented by 3.</li>
+        </ol>
+        <h2>Now enjoy your game.</h2>
+        <div class="button">
+            <button onclick="window.location.href = 'index.html'">Play the game</button>
+        </div>
+        
+    </div>
+</body>
+</html>

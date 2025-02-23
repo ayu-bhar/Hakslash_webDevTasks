@@ -1,0 +1,72 @@
+/* this file is to make some classes that are going to be used many times  */
+
+.flex{
+    /* it gives flex display to the tags that impliment it  */
+    display: flex; 
+}
+/* media query for screen  */
+@media (max-width : 500px) {
+    .flex{
+        flex-wrap: wrap;
+    }
+    .source-box {
+        flex-wrap: nowrap;
+    }
+}
+/* to give grid display  */
+.grid{
+    display: grid;
+}
+/* style and effects of the butoon used many times  */
+.button-work button{
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+    background-color: blue;
+    border: 1px solid black;
+    padding: 12px 0;
+    width: 180px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 0.3s;
+}
+.button-work button svg{
+    width: 16px;
+    margin-right: 4px; 
+    fill: white;
+}
+.button-work button:hover{
+    background-color: rgba(81, 238, 238, 0.67);
+    color: black;
+}
+.button-work button:hover svg{
+    fill: yellow;
+    filter: drop-shadow(2px 2px 2px black);
+}
+.button-work button:active{
+    background-color: gray;
+    color: white;
+}
+/* heading style that is going to be used many times  */
+.heading{
+    color: blue;
+    font-weight: 400;
+    line-height: 100px;
+    transition: color 0.25s;
+}
+.heading:hover{
+    color: aqua;
+}
+/* style of text of paragraph  */
+.innerText{
+    color: gray;
+}
+.sub-heading{
+    font-weight: 400;
+    margin-bottom: 50px;
+    transition: color 0.25s;
+}
+.sub-heading:hover{
+    color: blueviolet;
+}

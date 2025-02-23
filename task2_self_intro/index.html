@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- linking all the stylesheets and the javascript code  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="support.css">
+    <script src="script.js"></script>
+</head>
+    <!-- activating an event when page is loaded -->
+<body onload="eventAdder()"> 
+    <!-- setting the header navigation bar  -->
+    <header class="head">
+        <nav class="nav flex">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path
+                        d="M 12.007812 0 A 1.0001 1.0001 0 0 0 11 1 L 11 13.353516 A 1.0001 1.0001 0 0 0 11.566406 14.255859 L 29.566406 22.902344 A 1.0001 1.0001 0 0 0 30.554688 22.832031 L 39.554688 16.832031 A 1.0001 1.0001 0 0 0 39.486328 15.125 L 12.486328 0.125 A 1.0001 1.0001 0 0 0 12.007812 0 z M 13 2.7011719 L 37.080078 16.078125 L 29.919922 20.851562 L 13 12.724609 L 13 2.7011719 z M 11.958984 17 A 1.0001 1.0001 0 0 0 11 18 L 11 49 A 1.0001 1.0001 0 0 0 11.001953 49.033203 A 1.0001 1.0001 0 0 0 11.009766 49.121094 A 1.0001 1.0001 0 0 0 11.011719 49.148438 A 1.0001 1.0001 0 0 0 11.025391 49.224609 A 1.0001 1.0001 0 0 0 11.033203 49.253906 A 1.0001 1.0001 0 0 0 11.048828 49.304688 A 1.0001 1.0001 0 0 0 11.080078 49.388672 A 1.0001 1.0001 0 0 0 11.123047 49.478516 A 1.0001 1.0001 0 0 0 11.175781 49.564453 A 1.0001 1.0001 0 0 0 11.222656 49.626953 A 1.0001 1.0001 0 0 0 11.251953 49.660156 A 1.0001 1.0001 0 0 0 11.283203 49.693359 A 1.0001 1.0001 0 0 0 11.310547 49.720703 A 1.0001 1.0001 0 0 0 11.361328 49.767578 A 1.0001 1.0001 0 0 0 11.390625 49.791016 A 1.0001 1.0001 0 0 0 11.439453 49.826172 A 1.0001 1.0001 0 0 0 11.46875 49.845703 A 1.0001 1.0001 0 0 0 11.546875 49.890625 A 1.0001 1.0001 0 0 0 11.625 49.925781 A 1.0001 1.0001 0 0 0 11.648438 49.935547 A 1.0001 1.0001 0 0 0 11.697266 49.951172 A 1.0001 1.0001 0 0 0 11.757812 49.96875 A 1.0001 1.0001 0 0 0 11.791016 49.976562 A 1.0001 1.0001 0 0 0 11.839844 49.986328 A 1.0001 1.0001 0 0 0 11.914062 49.994141 A 1.0001 1.0001 0 0 0 11.929688 49.996094 A 1.0001 1.0001 0 0 0 11.941406 49.996094 A 1.0001 1.0001 0 0 0 12.029297 49.998047 A 1.0001 1.0001 0 0 0 12.128906 49.990234 A 1.0001 1.0001 0 0 0 12.207031 49.976562 A 1.0001 1.0001 0 0 0 12.228516 49.972656 A 1.0001 1.0001 0 0 0 12.259766 49.964844 A 1.0001 1.0001 0 0 0 12.324219 49.945312 A 1.0001 1.0001 0 0 0 12.326172 49.945312 A 1.0001 1.0001 0 0 0 12.416016 49.908203 A 1.0001 1.0001 0 0 0 12.496094 49.869141 L 40.496094 33.869141 A 1.0001 1.0001 0 0 0 41 33 L 41 20 A 1.0001 1.0001 0 0 0 39.28125 19.304688 L 14.185547 45.296875 L 20.955078 23.294922 A 1.0001 1.0001 0 0 0 20.529297 22.152344 L 12.529297 17.152344 A 1.0001 1.0001 0 0 0 11.958984 17 z M 13 19.804688 L 18.818359 23.441406 L 13 42.351562 L 13 19.804688 z M 39 22.474609 L 39 32.419922 L 17.582031 44.658203 L 39 22.474609 z">
+                    </path>
+                </svg>
+            </div>
+            <!-- setting details of the navigation bar -->
+            <div class="nav-content">
+                <ul class="flex">
+                    <li>START</li>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>BLOG</li>
+                    <li>OPEN SOURCE</li>
+                </ul>
+            </div>
+            <!-- button to work with me  -->
+            <div class="button-work top-button">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" style="enable-background:new 0 0 20 19"
+                        xml:space="preserve">
+                        <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                    </svg>
+                    Work with me
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- it is the main section wher the main informations resides  -->
+         <!-- my intro section to give a small info about me  -->
+        <section class="intro-section flex">
+            <div class="intro">
+                <p class="name"> <b> Hello,</b> I am Ayush </p>
+                <p class="work">I am learning web devlopment.</p>
+                <div class="button-work">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19"
+                            style="enable-background:new 0 0 20 19" xml:space="preserve">
+                            <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                        </svg>
+                        Work with me
+                    </button>
+                </div>
+            </div>
+            <div class="code-box">
+                <div class="code">
+                    <nav class="navigation">
+                        <ul class="flex">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </nav>
+                    <pre class="pre"><code>
+<span class="keyword">function</span> <span class="function">greet</span>(name) {
+    console.<span class="function">log</span>(<span class="string">`Hello, ${name}!`</span>);
+}
+<span class="function">greet</span>(<span class="string">"Guys"</span>);
+
+<span class="keyword">class</span> Ayush{
+    <span class="keyword">private</span> name <span class="keyword">=</span> <span class="string">'Ayush Bhardwaj'</span>
+    <span class="keyword">private</span> age <span class="keyword">=</span> <span class="string">18</span>
+    <span class="keyword">private</span> location <span class="keyword">=</span> <span class="string">'Nit Patna'</span>
+    <span class="keyword">private</span> email <span class="keyword">=</span> <span class="string">'ayushb.ug24.cs@nitp.ac.in'</span>
+}
+</code></pre>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- giving the links where you can cantact with me officially  -->
+        <section class="Services">
+            <div class="contacts flex">
+                <span class="a">
+                    <a target = "_balnk" href="https://github.com/ayu-bhar">GITHUB</a>
+                </span>
+                <span class="a">
+                    <a target = "_balnk" href="https://www.linkedin.com/in/ayush-bhardwaj-362271325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LINKEDIN</a>
+                </span>
+                <span class="a">
+                    <a target = "_balnk" href="https://leetcode.com/u/ayubhar/">LEETCODE</a>
+                </span>
+            </div>
+            <!-- a section to deliver my intro  -->
+            <div class="myIntro flex">
+                <div class="mySelf flex">
+                    <div class="myImg">
+                        <img src="myImg.jpg" alt="">
+                    </div>
+                    <div class="myDetails">
+                        <h1 class="heading">ABOUT ME</h1>
+                        <p class="innerText">I am a student of Nit Patna CSE branch with institute roll number
+                            2406148.<br>
+                            In tech field I know Java , HTML , CSS , Javascript , C . I know basic data structure
+                            and do questions on leetcode and I have done approx 150+ questions and have a streak of
+                            80 days on leetcode.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- a section to tell you about my services  -->
+            <div class="myServices">
+                <h1 class="heading">Services</h1>
+                <div class="webdev flex">
+                    <div class="End-container flex">
+                        <div class="backImg tilt">
+                            <img src="code2.jpg" alt="">
+                        </div>
+                        <div class="End-details">
+                            <h2 class="sub-heading">Backend devlopment</h2>
+                            <p class="innerText">
+                                I have currently started backend devlopment I don't know too much about backend , means
+                                I know only a little about backend side.
+                                <br><br>
+                            <div class="button-work">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19"
+                                        style="enable-background:new 0 0 20 19" xml:space="preserve">
+                                        <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                                    </svg>
+                                    Work with me
+                                </button>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="End-container flex">
+                        <div class="End-details">
+                            <h2 class="sub-heading">Frontend devlopment</h2>
+                            <p class="innerText">
+                                I hvae learned html , css and javascript , so I can do the front end side well. I have
+                                maded a spotify clone using my Frontend skills.
+                                <br><br>
+                            <div class="button-work">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19"
+                                        style="enable-background:new 0 0 20 19" xml:space="preserve">
+                                        <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                                    </svg>
+                                    Work with me
+                                </button>
+                            </div>
+                            </p>
+                        </div>
+                        <div class="backImg tilt">
+                            <img src="code3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- a section to talk about blogs but I don't have created a blog thats why I did not have attached any link to it -->
+            <div class="projects grid">
+                <div class="pro blue">
+                    <h1 class="heading" style="color: white;">Lear solving leetcode with Ayush</h1>
+                    <p class="innerText" style="color: white;">
+                        Solving leetcode problems is easy if you are consistent.
+                    </p>
+                    <div class="readmore">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19"
+                                style="enable-background:new 0 0 20 19" xml:space="preserve">
+                                <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                            </svg>
+                            Read Article
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <h1 class="heading" style="color: black;">Learn Basic data structures with Ayush</h1>
+                    <p class="innerText">
+                        I can teach you taht much of data structure that you can atleast start solving medium leve
+                        questions of leetcode and if you practice it nicely you will be able to solve hard also.
+                    </p>
+                    <div class="readmore blue-svg">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19"
+                                style="enable-background:new 0 0 20 19" xml:space="preserve">
+                                <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                            </svg>
+                            Read Article
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <h1 class="heading" style="color: black;">Learn javascript Ayush</h1>
+                    <p class="innerText">
+                        I can teach you that much javascript taht is required for you to start making your own
+                        responsive websites.
+                    </p>
+                    <div class="readmore blue-svg">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19"
+                                style="enable-background:new 0 0 20 19" xml:space="preserve">
+                                <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                            </svg>
+                            Read Article
+                        </button>
+                    </div>
+                </div>
+                <div class="pro black">
+                    <h1 class="heading" style="color: white;">Learn website cloning with Ayush</h1>
+                    <p class="innerText" style="color: white;">
+                        Through teaching you html , css , javascript I can teach you hot to clone a website .
+                    </p>
+                    <div class="readmore">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19"
+                                style="enable-background:new 0 0 20 19" xml:space="preserve">
+                                <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                            </svg>
+                            Read Article
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- section of sources I dont have idea about it so I just cloned the given sample -->
+            <div class="sources">
+                <h1 class="heading">Sources</h1>
+                <div class="source-boxes flex">
+                    <div class="source-box flex">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M13.3252 3.05011L8.66765 20.4323L10.5995 20.9499L15.257 3.56775L13.3252 3.05011Z">
+                                </path>
+                                <path
+                                    d="M7.61222 18.3608L8.97161 16.9124L8.9711 16.8933L3.87681 12.1121L8.66724 7.00798L7.20892 5.63928L1.0498 12.2017L7.61222 18.3608Z">
+                                </path>
+                                <path
+                                    d="M16.3883 18.3608L15.0289 16.9124L15.0294 16.8933L20.1237 12.1121L15.3333 7.00798L16.7916 5.63928L22.9507 12.2017L16.3883 18.3608Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="source-detail">
+                            <h3>Swap</h3>
+                            <p class="innerText">Lorem ipsum dolor, sit amet consectetur arn.</p>
+                        </div>
+                    </div>
+                    <div class="source-box flex">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M13.3252 3.05011L8.66765 20.4323L10.5995 20.9499L15.257 3.56775L13.3252 3.05011Z">
+                                </path>
+                                <path
+                                    d="M7.61222 18.3608L8.97161 16.9124L8.9711 16.8933L3.87681 12.1121L8.66724 7.00798L7.20892 5.63928L1.0498 12.2017L7.61222 18.3608Z">
+                                </path>
+                                <path
+                                    d="M16.3883 18.3608L15.0289 16.9124L15.0294 16.8933L20.1237 12.1121L15.3333 7.00798L16.7916 5.63928L22.9507 12.2017L16.3883 18.3608Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="source-detail">
+                            <h3>Swap</h3>
+                            <p class="innerText">Lorem ipsum dolor, sit amet consectetur arn.</p>
+                        </div>
+                    </div>
+                    <div class="source-box flex">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M13.3252 3.05011L8.66765 20.4323L10.5995 20.9499L15.257 3.56775L13.3252 3.05011Z">
+                                </path>
+                                <path
+                                    d="M7.61222 18.3608L8.97161 16.9124L8.9711 16.8933L3.87681 12.1121L8.66724 7.00798L7.20892 5.63928L1.0498 12.2017L7.61222 18.3608Z">
+                                </path>
+                                <path
+                                    d="M16.3883 18.3608L15.0289 16.9124L15.0294 16.8933L20.1237 12.1121L15.3333 7.00798L16.7916 5.63928L22.9507 12.2017L16.3883 18.3608Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="source-detail">
+                            <h3>Swap</h3>
+                            <p class="innerText">Lorem ipsum dolor, sit amet consectetur arn.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- creating the source navigator  -->
+                <div class="source-nav flex">
+                    <div class="nav-outer-circle">
+                        <div class="nav-inner-circle"></div>
+                    </div>
+                    <div class="nav-outer-circle">
+                        <div class="nav-inner-circle"></div>
+                    </div>
+                    <div class="nav-outer-circle">
+                        <div class="nav-inner-circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ending flex">
+                <div class="end flex">
+                    <div class="end-content">
+                        <h1 class="heading">Need help in devoloping your appplication ?</h1>
+                        <p>Let's get in touch</p>
+                    </div>
+                    <div class="button-work">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19"
+                                style="enable-background:new 0 0 20 19" xml:space="preserve">
+                                <path d="M-1 16h15v3l5-4.9L14 9v3H-1z" />
+                            </svg>
+                            Work with me
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- the footer section  -->
+    <footer>
+        <div class="foot-content flex">
+            <div class="footnav flex">
+                <div class="footlogo flex">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                            viewBox="0 0 50 50">
+                            <path
+                                d="M 12.007812 0 A 1.0001 1.0001 0 0 0 11 1 L 11 13.353516 A 1.0001 1.0001 0 0 0 11.566406 14.255859 L 29.566406 22.902344 A 1.0001 1.0001 0 0 0 30.554688 22.832031 L 39.554688 16.832031 A 1.0001 1.0001 0 0 0 39.486328 15.125 L 12.486328 0.125 A 1.0001 1.0001 0 0 0 12.007812 0 z M 13 2.7011719 L 37.080078 16.078125 L 29.919922 20.851562 L 13 12.724609 L 13 2.7011719 z M 11.958984 17 A 1.0001 1.0001 0 0 0 11 18 L 11 49 A 1.0001 1.0001 0 0 0 11.001953 49.033203 A 1.0001 1.0001 0 0 0 11.009766 49.121094 A 1.0001 1.0001 0 0 0 11.011719 49.148438 A 1.0001 1.0001 0 0 0 11.025391 49.224609 A 1.0001 1.0001 0 0 0 11.033203 49.253906 A 1.0001 1.0001 0 0 0 11.048828 49.304688 A 1.0001 1.0001 0 0 0 11.080078 49.388672 A 1.0001 1.0001 0 0 0 11.123047 49.478516 A 1.0001 1.0001 0 0 0 11.175781 49.564453 A 1.0001 1.0001 0 0 0 11.222656 49.626953 A 1.0001 1.0001 0 0 0 11.251953 49.660156 A 1.0001 1.0001 0 0 0 11.283203 49.693359 A 1.0001 1.0001 0 0 0 11.310547 49.720703 A 1.0001 1.0001 0 0 0 11.361328 49.767578 A 1.0001 1.0001 0 0 0 11.390625 49.791016 A 1.0001 1.0001 0 0 0 11.439453 49.826172 A 1.0001 1.0001 0 0 0 11.46875 49.845703 A 1.0001 1.0001 0 0 0 11.546875 49.890625 A 1.0001 1.0001 0 0 0 11.625 49.925781 A 1.0001 1.0001 0 0 0 11.648438 49.935547 A 1.0001 1.0001 0 0 0 11.697266 49.951172 A 1.0001 1.0001 0 0 0 11.757812 49.96875 A 1.0001 1.0001 0 0 0 11.791016 49.976562 A 1.0001 1.0001 0 0 0 11.839844 49.986328 A 1.0001 1.0001 0 0 0 11.914062 49.994141 A 1.0001 1.0001 0 0 0 11.929688 49.996094 A 1.0001 1.0001 0 0 0 11.941406 49.996094 A 1.0001 1.0001 0 0 0 12.029297 49.998047 A 1.0001 1.0001 0 0 0 12.128906 49.990234 A 1.0001 1.0001 0 0 0 12.207031 49.976562 A 1.0001 1.0001 0 0 0 12.228516 49.972656 A 1.0001 1.0001 0 0 0 12.259766 49.964844 A 1.0001 1.0001 0 0 0 12.324219 49.945312 A 1.0001 1.0001 0 0 0 12.326172 49.945312 A 1.0001 1.0001 0 0 0 12.416016 49.908203 A 1.0001 1.0001 0 0 0 12.496094 49.869141 L 40.496094 33.869141 A 1.0001 1.0001 0 0 0 41 33 L 41 20 A 1.0001 1.0001 0 0 0 39.28125 19.304688 L 14.185547 45.296875 L 20.955078 23.294922 A 1.0001 1.0001 0 0 0 20.529297 22.152344 L 12.529297 17.152344 A 1.0001 1.0001 0 0 0 11.958984 17 z M 13 19.804688 L 18.818359 23.441406 L 13 42.351562 L 13 19.804688 z M 39 22.474609 L 39 32.419922 L 17.582031 44.658203 L 39 22.474609 z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <p class="first-text">Ayush Bhardwaj</p>
+                        <p class="second-text">&copy; 2025 All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="contacts flex">
+                    <span class="a">
+                        <a target = "_balnk" href="https://github.com/ayu-bhar">GITHUB</a>
+                    </span>
+                    <span class="a">
+                        <a target = "_balnk" href="https://www.linkedin.com/in/ayush-bhardwaj-362271325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LINKEDIN</a>
+                    </span>
+                    <span class="a">
+                        <a target = "_balnk" href="https://leetcode.com/u/ayubhar/">LEETCODE</a>
+                    </span>
+                </div>
+                <div class="footLists"></div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
